@@ -1,0 +1,363 @@
+.wrapper-feedback{
+    width: 100%;
+    padding-top: 104px;
+    position: absolute;
+    z-index: 4;
+    top: -328px;
+}
+
+.feedback-container{
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.title-feedback{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.feedback{
+    width: 100%;
+    background: #0093D0;
+    padding-bottom: 56px;
+
+}
+
+.title-feedback{
+    padding-top: 52px;
+    padding-bottom: 46px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+input{
+    border: none;
+    background: none;
+}
+
+.form-feedback input{
+    border-bottom:1px solid white;
+}
+
+.input-wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.feedback-button{
+    margin: 0px auto;
+    width: 146px;
+    padding: 14px 6px;
+    background: #F57220;
+    margin-top: 44px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 140.4%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-map-info{
+    width: 100%;
+    display: flex;
+    height: 800px;
+    position: relative;
+    margin-top: 460px;
+}
+
+.map{
+    width: 100%;
+}
+.map-info{
+    width: 100%;
+    background: #F57220;
+}
+
+.map-info{
+    position: relative;
+}
+
+.fly-map{
+    position: absolute;
+    top: -30px;
+    left: 55px;
+}
+
+.work-time{
+    display: flex;
+    padding: 20px;
+}
+
+.title-footer {
+    padding-top: 190px;
+    padding-left: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.img-time{
+    margin-right: 26px;
+}
+
+.text-time{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.hours-time{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.icons-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 13%;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.viber{
+    width: 35px;
+    height: 35px;
+}
+
+.facebook{
+    width: 21px;
+    height: 21px;
+}
+.instagram{
+    width: 21px;
+    height: 21px;
+}
+.telegram{
+    width: 21px;
+    height: 21px;
+}
+
+.footer-wrapper{
+    width: 100%;
+    background-color: #0093D0;
+
+}
+
+.footer-menu-wrapper{
+    max-width: 1200px;
+    margin: 0px auto;
+    position: relative;
+}
+footer{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: white;
+    justify-content: space-between;
+    font-size: .9rem;
+    position: relative;
+    z-index: 9;
+    font-family: Arial;
+}
+.footer-menu ul{
+    display: flex;
+}
+.footer-menu li{
+    margin-right: 17px;
+    font-size: 18px;
+    font-family: Arial;
+    cursor: pointer;
+}
+.footer-menu li:hover{
+    color:black;
+}
+footer select{
+    background: none;
+    border: none;
+    color: white;
+    font-family: Arial;
+    font-size: 1rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+footer option{
+    background: none;
+    color: black;
+}
+
+
+
+input[type="tel"]::-webkit-input-placeholder { color: white; }
+input[type="tel"]:-ms-input-placeholder { color: white; }
+input[type="tel"]::-ms-input-placeholder { color: white; }
+input[type="tel"]::placeholder { color: white; }
+
+input[type="text"]::-webkit-input-placeholder { color: white; }
+input[type="text"]:-ms-input-placeholder { color: white; }
+input[type="text"]::-ms-input-placeholder { color: white; }
+input[type="text"]::placeholder { color: white; }
+
+input[type="email"]::-webkit-input-placeholder { color: white; }
+input[type="email"]:-ms-input-placeholder { color: white; }
+input[type="email"]::-ms-input-placeholder { color: white; }
+input[type="email"]::placeholder { color: white; }
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1024px) {
+
+
+    .fly-map {
+        display: none;
+    }
+
+    .title-footer {
+        padding: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+
+    .footer-map-info {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .wrapper-feedback {
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+
+    .map {
+        width: 100%;
+        height: 500px;
+    }
+
+    .map-info {
+        width: 100%;
+        background: #F57220;
+        padding: 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .fly-map {
+        display: none;
+    }
+
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        margin: 0px auto;]
+    }
+
+    .form-feedback input {
+        border-bottom: 1px solid white;
+        margin-bottom: 25px;
+    }
+
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 1px;
+        color: white;
+        justify-content: space-between;
+        font-size: .9rem;
+        position: relative;
+        z-index: 9;
+        font-family: Arial;
+        align-items: flex-start;
+    }
+
+    .footer-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu li {
+        padding-bottom: 10px;
+    }
+
+    .map-info {
+        width: 100%;
+        background: #F57220;
+        padding: 0px;
+    }
+
+
+}
+
+@media (max-width: 425px) {
+
+
+
+    .footer-map-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper-feedback {
+        width: 100%;
+        padding-top: 0px;
+        position: relative;
+        z-index: 4;
+        top: 0px;
+    }
+
+    .footer-map-info {
+        height: auto;
+    }
+
+    .map-info {
+        padding: 0px;
+    }
+
+    .title-footer {
+        padding-top: 20px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        color: #FFFFFF;
+    }
+    .map {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width: 320px){
+
+}
