@@ -43,7 +43,7 @@ header{
     cursor: pointer;
 }
 .header-menu li:hover{
-    color: black;
+    color: #0093D0;
 }
 header select{
     background: none;
@@ -105,7 +105,7 @@ header option{
         display: none;
     }
     .banner-info-main-text{
-        margin-top: 200px;
+        margin-top: 50px;
     }
     .banner-info-title{
         font-size: 4rem;
