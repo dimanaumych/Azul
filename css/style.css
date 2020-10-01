@@ -69,9 +69,10 @@ header{
     font-family: Arial;
     letter-spacing: 1px;
     cursor: pointer;
+    list-style: none;
 }
 .header-menu li:hover{
-    color:#0093D0;
+    color: #0093D0;
 }
 header select{
     background: none;
@@ -123,6 +124,13 @@ header option{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    color: white;
+    font-family: Arial;
+    margin-top: 50px;
+}
+.banner-info-main-text p{
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 .banner-info-title{
     color: white;
@@ -141,7 +149,6 @@ header option{
     cursor: pointer;
     background-color: #0093D0;
     text-align: center;
-    text-transform: uppercase;
     line-height: 60px;
     margin-top: 20px;
 }
@@ -166,7 +173,7 @@ header option{
     font-family: Arial;
     font-size: 3rem;
     font-weight: normal;
-    text-transform: uppercase;
+    font-weight: bold;
 }
 .slider-wrapper{
     width: 100%;
@@ -316,13 +323,15 @@ header option{
 }
 .about-company-wrapper{
     width: 100%;
-    position: relative;
+    margin-top:100px;
+
 }
 .about-company{
     width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    position: relative;
     /*position: relative;*/
 }
 .about-company-info{
@@ -336,23 +345,36 @@ header option{
     margin-bottom: 30px;
 
 }
-.about-company-text{
-
+.about-company-blocks{
+    width: 240px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    background-color: #2484C6;
+    display: flex;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    align-items: center;
+}
+.about-company-blocks p{
+    margin-left: 15px;
 }
 .about-company-images{
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
+    right: 0;
     top: 50px;
 }
 .about-company-images img{
-    width: 285px;
-    height: 330px;
+    width: 200px;
+    height: 270px;
 }
 .about-company-images div{
-    width: 285px;
-    height: 700px;
+    width: 200px;
+    height: 570px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -398,25 +420,24 @@ header option{
     .about-company{
         width: 1020px;
     }
-    .our-team{
-        width: 1020px;
-    }
-}
-@media(max-width: 1410px){
-    .about-company-images{
-        top: 130px;
+    .about-company-blocks {
+        width: 200px;
+        font-size: 1rem;
     }
     .about-company-images img{
-        width: 225px;
-        height: 290px;
+        width: 170px;
+        height: 240px;
     }
     .about-company-images div{
-        width: 225px;
-        height: 620px;
+        width: 170px;
+        height: 510px;
+        display: flex;
         margin-left: 7px;
         margin-right: 7px;
     }
-
+    .our-team{
+        width: 1020px;
+    }
 }
 @media (max-width: 1024px) {
     header{
@@ -463,6 +484,24 @@ header option{
     .about-company{
         width: 760px;
     }
+    .about-company-blocks {
+        width: 160px;
+        font-size: .9rem;
+    }
+    .about-company-images{
+        top: 100px;
+    }
+    .about-company-images img{
+        width: 120px;
+        height: 190px;
+    }
+    .about-company-images div{
+        width: 120px;
+        height: 410px;
+        display: flex;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
     .our-team{
         width: 760px;
     }
@@ -494,19 +533,7 @@ header option{
         top: -300px;
         left: 200px;
     }
-    .about-company-images{
-        top: 130px;
-    }
-    .about-company-images img{
-        width: 165px;
-        height: 230px;
-    }
-    .about-company-images div{
-        width: 165px;
-        height: 500px;
-        margin-left: 7px;
-        margin-right: 7px;
-    }
+
 
     .about-company-images div:nth-child(2){
         margin-top: 100px;
@@ -578,7 +605,7 @@ header option{
         width: 420px;
     }
     .about-company-images{
-        top: 250px;
+        top: 450px;
     }
     .about-company-info{
         width: 100%;
@@ -724,15 +751,15 @@ header option{
         width: 90%;
     }
     .about-company-images{
-        top: 270px;
+        top: 420px;
     }
     .about-company-images img{
-        width: 60px;
-        height: 95px;
+        width: 70px;
+        height: 105px;
     }
     .about-company-images div{
-        width: 60px;
-        height: 210px;
+        width: 70px;
+        height: 240px;
         margin-left: 7px;
         margin-right: 7px;
     }
@@ -749,5 +776,25 @@ header option{
     }
     .our-team-slider-buttons {
         margin-left: 40px;
+    }
+}
+@media (max-width: 390px) {
+    .about-company-images{
+        top: 480px;
+    }
+    .about-company-images img{
+        width: 60px;
+        height: 105px;
+    }
+    .about-company-images div{
+        width: 60px;
+        height: 230px;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+}
+@media (max-width: 390px) {
+    .about-company-images{
+        top: 520px;
     }
 }
