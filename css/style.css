@@ -343,7 +343,6 @@ header option{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
     top: 50px;
 }
 .about-company-images img{
@@ -372,6 +371,49 @@ header option{
 
 .made-by{
     display: flex;
+}
+
+.additional-info-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    display:  flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.additional-info-section-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    border-left: 2px solid #2484C6;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.additional-info-title{
+    font-family: Montserrat;
+    font-weight: bold;
+    width: auto;
+}
+.additional-info-button{
+    width: 12px;
+    height: 9px;
+    cursor: pointer;
+}
+.additional-info-cancel{
+    width: 12px;
+    height: 9px;
+    cursor: pointer;
+    display: none;
+}
+.additional-info-text{
+    display: none;
+    margin-top: 20px;
+    font-family: Montserrat;
 }
 
 
