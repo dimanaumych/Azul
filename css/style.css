@@ -1,6 +1,6 @@
 body{
   width: 100%;
-  height: 2000px;
+  /*height: 2000px;*/
   margin: 0;
   font-family: Arial;
 }
@@ -152,6 +152,21 @@ header option{
     line-height: 60px;
     margin-top: 20px;
 }
+
+.social-icons{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 200px;
+    z-index: 99;
+}
+.social-icons img{
+    width: 40px;
+    height: 40px;
+}
+
+
 .tourist-services-wrapper{
     width: 100%;
     position: relative;
@@ -243,6 +258,57 @@ header option{
     transform: rotate(180deg);
 }
 
+/*PARTNERS*/
+
+.partners-wrapper{
+    width: 100%;
+    position: relative;
+    margin-bottom: 150px;
+}
+.partners{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.partners-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.partners-title-text{
+    font-family: Arial;
+    font-size: 3rem;
+    font-weight: normal;
+    font-weight: bold;
+}
+.partners-services-slider-buttons{
+    display: flex;
+}
+.partners-slider-buttons img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.partners-slider-buttons img:hover{
+    opacity: .4;
+}
+.partners-slider-right-button{
+    transform: rotate(180deg);
+}
+.partners-slider-wrapper{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*PARTNERS*/
+
+
+
 .bottom-image-slider{
     margin-top: 40px;
 }
@@ -275,51 +341,7 @@ header option{
     display: flex;
     align-items: center;
 }
-.advantages{
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.advantages-list-wrapper{
-    display: flex;
-    width: 45%;
-    flex-direction: column;
-    color: white;
-    font-family: Arial;
 
-}
-.advantages-title{
-    padding-left: 40px;
-    font-size: 2.7rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-.advantages-list{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-}
-.advantages-item{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.advantages-item img{
-    width: 90px;
-    height: 90px;
-}
-.advantages-image{
-    width: 45%;
-}
-.advantages-image img{
-    width: 100%;
-    height: 730px;
-}
 .about-company-wrapper{
     width: 100%;
     margin-top:100px;
@@ -395,15 +417,157 @@ header option{
     display: flex;
 }
 
+/* Лицензии */
+.license-wrapper{
+    width: 100%;
+    height: 200px;
+    background-color: #2484C6;
+    margin-top: 400px;
+}
+.license{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.left-side-license{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.right-side-license{
+    position: relative;
+    width: 75%;
+}
+.left-side-license p{
+    font-size: 2.4rem;
+    color: white;
+    font-weight: bold;
+    font-family: Arial;
+}
+.license-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 70px;
+}
+.license-buttons img{
+    width: 12px;
+    height: 24px;
+    cursor: pointer;
+}
+.sea-bg{
+    width: 700px;
+    height: 300px;
+    position: absolute;
+    left: -100px;
+    top: -100px;
+}
+.license-slider{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.license-slide{
+    position: relative;
+    /*border: 10px solid white;*/
+    transition: .7s ease;
+    cursor: pointer;
+}
+
+.zoom-image{
+    display: none;
+    position: absolute;
+    top:50%;
+    left:55%;
+    transform:translate(-55%, -50%);
+}
+.license-slider .slick-slide{
+    width: 100%;
+    height: 100%;
+    margin-right: 30px;
+    margin-bottom: 5px;
+}
+.license-slider .slick-slide .license-slider-image{
+    width: 100%;
+    border: 10px solid white;
+}
+.license-slider .slick-slide .zoom-image{
+    /*display: none;*/
+}
+.slick-arrow .slick-hidden {
+    display: flex;
+    cursor: pointer;
+}
+/*.license-slider-image:hover .license-slider .slick-slide .zoom-image{*/
+/*    display: unset;*/
+/*    !*filter: blur(0px);*!*/
+/*}*/
+/* Лицензии */
+/* POPUP */
+.popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.popup-content{
+    width: 30%;
+    height: auto;
+    min-height: 85%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: white;
+    /* border: 1px solid black; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    /*height: 100%;*/
+}
+
+.popup-close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 45px;
+    top: 40px;
+    cursor: pointer;
+}
+.popup-close img{
+    width: 100%;
+}
+/* POPUP IMAGE*/
+
 .additional-info-wrapper{
     width: 1200px;
     margin: 0 auto;
     display:  flex;
     flex-direction: column;
-    margin-top: 150px;
+
+}
+.additional-info-wrapper-title{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 350px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-family: Arial;
+    margin-bottom: 70px;
 }
 .additional-info-section-wrapper{
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -422,15 +586,18 @@ header option{
     width: auto;
 }
 .additional-info-button{
-    width: 12px;
-    height: 9px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
+    transition: .7s;
 }
 .additional-info-cancel{
-    width: 12px;
-    height: 9px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     display: none;
+    transition: 1s;
+    transform: rotate(180deg);
 }
 .additional-info-text{
     display: none;
@@ -477,8 +644,21 @@ header option{
         margin-left: 7px;
         margin-right: 7px;
     }
-    .our-team{
+    .license{
         width: 1020px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .additional-info-wrapper{
+        width: 1020px;
+    }
+    .additional-info-wrapper-title{
+        width: 1020px;
+    }
+    .partners{
+        width: 900px;
     }
 }
 @media (max-width: 1024px) {
@@ -511,18 +691,6 @@ header option{
         top: 610px;
         z-index: -1;
     }
-    .advantages-wrapper{
-        height: 500px;
-    }
-    .advantages-image img{
-        height: 590px;
-    }
-    .advantages{
-        width: 760px;
-    }
-    .advantages-title{
-        padding-left: 0px;
-    }
     .about-company{
         width: 760px;
     }
@@ -544,38 +712,6 @@ header option{
         margin-left: 7px;
         margin-right: 7px;
     }
-    .our-team{
-        width: 760px;
-    }
-    .about-company-left-plane{
-        width: 250px;
-        height: 400px;
-        position: absolute;
-        top: 150px;
-        left: 0px;
-    }
-    .about-company-right-plane {
-        width: 320px;
-        height: 480px;
-        position: absolute;
-        top: 400px;
-        right: 0;
-    }
-    .about-company-center-plane {
-        width: 500px;
-        height: 500px;
-        position: absolute;
-        top: 580px;
-        left: 150px;
-        /* z-index: 100; */
-    }
-    .about-company-top-plane {
-        width: 450px;
-        height: 450px;
-        top: -300px;
-        left: 200px;
-    }
-
 
     .about-company-images div:nth-child(2){
         margin-top: 100px;
@@ -586,8 +722,38 @@ header option{
     .about-company-images div:nth-child(4){
         margin-bottom: 200px;
     }
+    .license-wrapper{
+        margin-top: 550px;
+    }
+    .license{
+        width: 760px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .sea-bg{
+        width: 500px;
+        left: -50px;
+    }
+    .left-side-license p{
+        font-size: 1.9rem;
+    }
+    .additional-info-wrapper{
+        width: 760px;
+    }
+    .additional-info-wrapper-title{
+        width: 760px;
+    }
+    .partners{
+        width: 700px;
+    }
+    .popup-content{
+        width: 40%;
+        height: 80%;
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header-menu{
         display: none;
     }
@@ -671,72 +837,57 @@ header option{
     .about-company-images div:nth-child(4) {
         margin-bottom: 100px;
     }
-    .about-company-left-plane {
-            width: 170px;
-            height: 280px;
-            top: 200px;
-    }
-    .about-company-right-plane {
-        width: 220px;
-        height: 340px;
-        top: 400px;
-        right: 0;
-    }
-    .about-company-center-plane {
-        width: 300px;
-        height: 300px;
-        top: 580px;
-        left: 100px;
-    }
-    .about-company-top-plane {
-        display: none;
-    }
-    .advantages-wrapper{
-        margin-bottom: 70px;
-    }
-    .advantages-list-wrapper{
-        width: 100%;
-    }
-    .advantages-image{
-        display: none;
-    }
-    .our-team-wrapper{
-        margin-top: 700px;
-    }
-    .our-team-slider{
-        flex-wrap: wrap;
-    }
-    .our-team-slider .slick-slide{
-        display: block;
-    }
-    .our-team-slider img{
-        width: 100%;
-    }
-    .our-team-slider-info{
-        width: 100%;
-        margin-top: 30px;
+    .license{
+        width: 420px;
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        margin: 0 auto;
+        margin-top: 100px;
     }
-    .our-team-slider-text{
+    .left-side-license{
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .right-side-license{
         width: 100%;
     }
-    .our-team-slider-buttons{
-        width: 20%;
-        margin-top: 25px;
+    .license-buttons{
+        width: 50px;
+    }
+    .sea-bg{
+        width: 300px;
+        left: 0px;
+    }
+    .left-side-license p{
+        font-size: 1.9rem;
+    }
+    .additional-info-wrapper{
+        width: 420px;
+    }
+    .additional-info-wrapper-title{
+        width: 420px;
+    }
+    .partners{
+        width: 400px;
+    }
+    .partners-slider-wrapper{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .popup-content{
+        width: 50%;
+        height: 65%;
+    }
+}
+@media (max-width: 580px) {
+    .popup-content{
+        width: 70%;
+        height: 50%;
     }
 }
 @media (max-width: 426px) {
-    .about-company-center-plane {
-        display: none;
-    }
-    .about-company-right-plane {
-        top: 520px;
-    }
-    .about-company-left-plane {
-        top: 150px;
-    }
     .left-map{
         display: none;
     }
@@ -769,13 +920,6 @@ header option{
     }
     .tourist-services-title-text{
         font-size: 2rem;
-    }
-    .left-plane {
-        width: 280px;
-        position: absolute;
-        left: 0;
-        top: 810px;
-        z-index: -1;
     }
     .advantages-wrapper{
         height: 450px;
@@ -818,6 +962,38 @@ header option{
     }
     .our-team-slider-buttons {
         margin-left: 40px;
+    }
+    .license{
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+    .sea-bg{
+        width: 300px;
+        height: 250px;
+        left: 0px;
+    }
+    .left-side-license p{
+        font-size: 1.9rem;
+    }
+    .additional-info-wrapper{
+        width: 320px;
+    }
+    .additional-info-wrapper-title{
+        width: 320px;
+    }
+    .partners{
+        width: 320px;
+    }
+    .partners-title-text{
+        font-size: 1.8rem;
+    }
+    .popup-content{
+        width: 80%;
+        height: 60%;
     }
 }
 @media (max-width: 390px) {

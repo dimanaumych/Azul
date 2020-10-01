@@ -189,6 +189,7 @@ footer{
     font-size: 18px;
     font-family: Arial;
     cursor: pointer;
+    list-style: none;
 }
 .footer-menu li:hover{
     color:black;
@@ -269,7 +270,9 @@ input[type="email"]::placeholder { color: white; }
         background: #F57220;
         padding: 0px;
     }
-
+    .made-by{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
