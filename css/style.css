@@ -3,7 +3,18 @@ body{
   height: 2000px;
   margin: 0;
   font-family: Arial;
+    position: relative;
 }
+
+
+
+.call-back{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 4;
+}
+
 a{
     color: white;
     text-decoration: none;

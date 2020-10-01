@@ -187,6 +187,7 @@ footer{
 .footer-menu li{
     margin-right: 17px;
     font-size: 18px;
+    list-style: none;
     font-family: Arial;
     cursor: pointer;
 }
