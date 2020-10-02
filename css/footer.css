@@ -187,9 +187,9 @@ footer{
 .footer-menu li{
     margin-right: 17px;
     font-size: 18px;
-    list-style: none;
     font-family: Arial;
     cursor: pointer;
+    list-style: none;
 }
 .footer-menu li:hover{
     color:black;
@@ -267,10 +267,12 @@ input[type="email"]::placeholder { color: white; }
 
     .map-info {
         width: 100%;
-        background: #F57220;
+        background: #2484C6;
         padding: 0px;
     }
-
+    .made-by{
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
